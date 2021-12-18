@@ -35,8 +35,7 @@ const data = [
     id: 6,
     name: "Ladder'Op",
     url: "http://dtsl.ehb.be/~youssef.sefiani/ladderop/curr/",
-    imageUrl:
-      "http://dtsl.ehb.be/~youssef.sefiani/ladderop/curr/img/logo_ladderop.png",
+    imageUrl: "https://i.gifer.com/LLJj.gif",
   },
   {
     id: 7,

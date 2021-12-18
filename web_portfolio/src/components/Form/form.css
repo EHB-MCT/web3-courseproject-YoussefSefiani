@@ -4,6 +4,7 @@
   padding: 25px;
   width: 50%;
   height: 100%;
+  text-align: center;
 }
 
 input,
@@ -45,9 +46,8 @@ textarea {
 }
 
 #send-button {
-  padding: 5px 14px;
   font-size: 21px;
-  width: 100%;
+  width: 80%;
   border: 1px solid white;
 }
 

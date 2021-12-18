@@ -8,8 +8,8 @@ import data from "../../data/projects-data";
 let Projects = (props) => {
   let projects = data.map((project) => {
     return (
-      <li className="project-list-item">
-        <a href={project.url} target="_blank" rel="noopener">
+      <li className="project-list-item" key={project.id}>
+        <a href={project.url} target="_blank" rel="noreferrer">
           <div className="circle">{project.name}</div>
           <img src={project.imageUrl} alt="project" className="project" />
         </a>

@@ -6,18 +6,18 @@
   display: inline-block;
 }
 
-a {
+.a {
   text-align: center;
   outline: none;
   text-decoration: none;
 }
 
-a:focus {
+.a:focus {
   outline: none;
   text-decoration: none;
 }
 
-a:active {
+.a:active {
   outline: none;
   text-decoration: none;
 }
