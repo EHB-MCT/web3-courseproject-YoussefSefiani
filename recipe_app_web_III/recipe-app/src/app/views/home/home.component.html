@@ -1,0 +1,78 @@
+<!-- Card -->
+<div class="container">
+  <mdb-card *ngFor="let recipe of recipes" class="mt-3">
+    <div class="view rgba-white-slight waves-light" mdbWavesEffect></div>
+    <!--Card content-->
+    <mdb-card-body>
+      <!--Title-->
+      <mdb-card-title *ngIf="!editMode">
+        <h4>{{ recipe.name }}</h4>
+      </mdb-card-title>
+
+      <input
+        *ngIf="editMode"
+        [(ngModel)]="recipe.name"
+        type="text"
+        class="form-control mb-4"
+        name="name"
+      />
+
+      <!--Text-->
+      <mdb-card-text *ngIf="!editMode">
+        {{ recipe.ingredients }}
+      </mdb-card-text>
+
+      <input
+        *ngIf="editMode"
+        [(ngModel)]="recipe.ingredients"
+        type="text"
+        class="form-control mb-4"
+        name="name"
+      />
+
+      <mdb-card-text *ngIf="!editMode">
+        {{ recipe.description }}
+      </mdb-card-text>
+
+      <input
+        *ngIf="editMode"
+        [(ngModel)]="recipe.description"
+        type="text"
+        class="form-control mb-4"
+        name="name"
+      />
+      <button
+        *ngIf="!editMode"
+        (click)="toEditMode()"
+        mdbBtn
+        color="indigo"
+        mdbWavesEffect
+      >
+        EDIT
+      </button>
+
+      <a
+        (click)="confirmEditMode(recipe)"
+        *ngIf="editMode"
+        mdbBtn
+        href="#"
+        color="indigo"
+        mdbWavesEffect
+      >
+        CONFIRM EDIT
+      </a>
+
+      <a
+        (click)="onDelete($event)"
+        href="#"
+        mdbBtn
+        color="indigo"
+        mdbWavesEffect
+        id="{{ recipe.id }}"
+      >
+        DELETE
+      </a>
+    </mdb-card-body>
+  </mdb-card>
+  <!-- Card -->
+</div>

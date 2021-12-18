@@ -1,0 +1,39 @@
+<!-- Default form contact -->
+<div class="container">
+  <form class="text-center border border-light p-5" (submit)="onSubmit()">
+    <p class="h4 mb-4">Add recipe</p>
+
+    <!-- Name -->
+    <input
+      [(ngModel)]="name"
+      type="text"
+      class="form-control mb-4"
+      placeholder="Name"
+      name="name"
+    />
+
+    <!-- Email -->
+    <input
+      [(ngModel)]="ingredients"
+      type="text"
+      class="form-control mb-4"
+      placeholder="Ingredients"
+      name="ingredients"
+    />
+
+    <!-- Message -->
+    <div class="form-group">
+      <textarea
+        [(ngModel)]="description"
+        class="form-control rounded-0"
+        rows="3"
+        placeholder="Description"
+        name="description"
+      ></textarea>
+    </div>
+
+    <!-- Send button -->
+    <button mdbBtn color="indigo" type="submit">Add recipe</button>
+  </form>
+  <!-- Default form contact -->
+</div>
