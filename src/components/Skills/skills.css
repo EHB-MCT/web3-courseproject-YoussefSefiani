@@ -1,0 +1,80 @@
+.skills-container {
+  height: 20%;
+  margin: auto 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 0;
+  float: left;
+  width: 90%;
+  clear: both;
+}
+
+.skills-content {
+}
+
+.spacing {
+  flex: 1;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.skill {
+  margin: auto;
+}
+
+.skill-name {
+  font-weight: bold;
+  margin-left: 1em;
+}
+
+.progress-bar {
+  width: 500px !important;
+}
+
+.progress-bar-rect-wrap-container {
+  margin: 1em !important;
+}
+
+.rect-progress-bar-percent {
+  display: none !important;
+}
+
+/* @media only screen and (max-width: 1380px) {
+  .skills-container {
+    height: 20%;
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 0;
+    float: left;
+    width: 90%;
+  }
+} */
+
+@media only screen and (max-width: 480px) {
+  .skills-container {
+    height: max-content;
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 0;
+    float: left;
+    width: 90%;
+  }
+
+  .skills {
+    grid-template-columns: 1fr;
+    margin: 50px 0;
+  }
+
+  .progress-bar {
+    width: 300px !important;
+  }
+
+  .spacing {
+    flex: unset;
+  }
+}

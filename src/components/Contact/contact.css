@@ -1,0 +1,31 @@
+.contact-container {
+  margin: auto 0;
+  float: left;
+  width: 95%;
+  height: 20%;
+}
+
+.form-and-map {
+  display: flex;
+  position: relative;
+  height: 80%;
+}
+
+@media only screen and (max-width: 480px) {
+  .form-and-map {
+    display: block;
+    position: relative;
+    height: max-content;
+  }
+
+  .map {
+    width: 100%;
+  }
+
+  .contact-container {
+    margin: auto 0;
+    float: left;
+    width: 100%;
+    height: max-content;
+  }
+}

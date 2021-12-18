@@ -1,0 +1,23 @@
+.side-container {
+  display: grid;
+  grid-template-columns: 2fr 24fr 1fr;
+  width: 100%;
+}
+
+.one {
+  background-image: url("../../img/git-lines-one.svg");
+}
+
+.two {
+  background-image: url("../../img/git-lines-two.svg");
+}
+
+.three {
+  background-image: url("../../img/git-lines-three.svg");
+}
+
+.git {
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
